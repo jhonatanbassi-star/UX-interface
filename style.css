@@ -132,4 +132,56 @@
                 border-radius: 15px;
                 border: 2px dashed var(--primaria);
             }
-            
+            .caixa-direitos p {
+                margin-bottom: 15px;
+            }
+            .alerta-golpe {
+                list-style: none;
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+                gap: 20px;
+            }
+            .alerta-golpe li {
+                background: #fff5f5;
+                padding: 25px;
+                border-radius: 20px;
+                border: 2px solid #ffe3e3;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                transition: background 0.2s;
+            }
+            .alerta-golpe li:hover {
+                font-size: 2.5rem;
+                background: var(--branco);
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0;
+                flex-shrink: 0;
+                box-shadow: 0 4px 8px rgba(211, 47, 47, 0.1);
+            }
+            footer {
+                display: block;
+                background: var(--primaria);
+                color: white;
+                text-align: center;
+                padding: 40px 20px;
+                margin-top: 50px;
+            }
+            @media (max-width: 600px) {
+                font-size: 20px;
+            }
+            .banner h1 {
+                font-size: 1.8rem;
+                padding-top: 80px;
+            }
+            .botao-ajuda {
+                width: 100%;
+                padding: 15px;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
